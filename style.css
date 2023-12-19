@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    background-color: black;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 40rem;
+    height: 100vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1702031617375-f71096eb385d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    position: relative;
+    top: -5rem;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.logo_img {
+    width: 9rem;
+    height: auto;
+    filter: sepia(40%);
+}
+
+.logo > p {
+    font-size: 5rem;
+    font-weight: bold;
+    letter-spacing: 1.5rem;
+}
+
+.arrow {
+    visibility: hidden;
+    height: 20vh;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(100);
+    transform: rotateX(66deg)
+}
+
+.credits {
+    position: absolute;
+    bottom: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.credits > a {
+    color: white;
+}
+
+.sign-up_background {
+    background-image: url("https://images.unsplash.com/photo-1702031617375-f71096eb385d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+
+    position: absolute;
+    left: 40rem;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+.sign-up {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.sign-up_form {
+    width: 20rem;
+    height: 30rem;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 2em;
+    border-radius: 3em;
+    z-index: 1;
+}
+
+.form_input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 70%;
+    height: 2.5em;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+}
+
+label {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.submit_btn{
+    color: white;
+    background-color: #5072A7;
+    border: 0.2em #5072A7 solid;
+    width: 100%;
+    height: 1.5em;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+@media only screen and (max-width: 1280px)
+{
+    .sidebar {
+        width: 30rem;
+    }
+
+    .sign-up_background {
+        left: 30rem;
+    }
+
+    .logo {
+        height: 10rem;
+        gap: 2rem;
+    }
+
+    .logo_img {
+        width: 7rem;
+    }
+
+    .logo > p {
+        font-size: 4rem;
+        letter-spacing: 1.25rem;
+    }
+
+}
+
+@media only screen and (max-width: 960px)
+{
+    .container
+    {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100vw;
+    }
+
+    .arrow {
+        visibility: visible;
+        bottom: 10vh;
+    }
+
+    .sign-up_background {
+        height: 100vh;
+        position: absolute;
+        top: 100vh;
+        left: 0;
+    }
+
+    .sign-up {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    .logo {
+        gap: 2rem;
+        height: 8rem;
+    }
+
+    .logo_img {
+        width: 5rem;
+        height: auto;
+    }
+
+    .logo > p {
+        font-size: 3rem;
+        letter-spacing: 1rem;
+    }
+
+    .arrow {
+        height: 15vh;
+        width: auto;
+    }
+
+    .form_input {
+        letter-spacing: 0.1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    .submit_btn{
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 375px)
+{
+    .logo {
+        gap: 1.5rem;
+        height: 6rem;
+    }
+
+    .logo_img {
+        width: 4rem;
+        height: auto;
+    }
+
+    .logo > p {
+        font-size: 2.5rem;
+        letter-spacing: 0.8rem;
+    }
+
+    .arrow {
+        height: 13vh;
+        width: auto;
+    }
+
+    .credits {
+        font-size: 0.7rem;
+    }
+
+    .sign-up_form {
+        width: 18rem;
+    }
+
+    .form_input {
+        letter-spacing: 0.1rem;
+    }
+
+    label {
+        font-size: 0.8rem;
+    }
+
+    .submit_btn{
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+    }
+}

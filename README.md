@@ -1,1 +1,1 @@
-# odin_signupForm
+This project demonstrates responsive web design and the use of forms in HTML by designing and implementing a sign-up form for an imaginary service.

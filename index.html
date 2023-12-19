@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <div class="logo">
+            <img class="logo_img" src="logo.png" alt="logo-img">
+            <p>BLISS</p>
+        </div>
+        <img class="arrow" src="arrow.png" alt="down-img">
+        <p class="credits">Photo by <a href="https://unsplash.com/@girl_behindthelens?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Amy Vann</a> on <a href="https://unsplash.com/photos/a-view-of-a-beach-with-a-boat-in-the-distance-GFsc977iFL4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+    </div>
+    <div class="sign-up_background"></div>
+    <div class="sign-up">
+        <form class="sign-up_form" action="">
+            <div class="form_input">
+                <label for="name">Full Name</label>
+                <input type="text" name="name" maxlength="50" pattern="^[a-zA-Z]+(?: [a-zA-Z]+)+$" title="Please enter your full name (ie. John Smith)" required>
+            </div>
+            <div class="form_input">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" title="Please enter your email address (ie. john.smith@gmail.com)" required>
+            </div>
+            <div class="form_input">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="Please enter your phone number (ie. 123-456-7890)" required />
+            </div>
+            <div class="form_input">
+                <label for="password">Password</label>
+                <input type="password" name="password" title="Please enter a password" minlength="8" maxlength="50" required>
+            </div>
+            <div class="form_input">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" name="confirm" title="Please re-enter your password" minlength="8" maxlength="50" required>
+            </div>
+            <div class="form_input">
+                <label for="submit"></label>
+                <input class="submit_btn" type="submit" name="submit" value="CONTINUE">
+            </div>
+        </form>
+    </div>
+</div>
+    
+</body>
+</html>
