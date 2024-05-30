@@ -139,6 +139,10 @@ label {
     border-radius: 0.5em;
 }
 
+.error {
+    color: red;
+}
+
 @media only screen and (max-width: 1280px)
 {
     .sidebar {
