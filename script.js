@@ -23,6 +23,6 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
     }
     else 
     {
-        alert("Registration successful!")
+        alert("Registration successful!");
     }
 });
